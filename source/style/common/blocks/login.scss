@@ -1,0 +1,119 @@
+.login {
+  height: 100vh;
+  min-height: 530px;
+  overflow: hidden;
+  position: relative;
+  background: url(../img/photo_bg.jpg) no-repeat left top / cover;
+}
+
+.login__title {
+  color: white;
+  font-size: 35px;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 50px;
+  text-align: center;
+  margin-top: 40px;
+  font-family: 'Sansus Webissimo';
+  &:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 89px;
+    height: 3px;
+    background-color: white;
+    @include centered(x);
+    margin-top: 20px;
+  }
+}
+
+.login__forms {
+  text-align: center;
+  position: relative;
+}
+
+.input__pic {
+  background-color: #f0efe9;
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  border-radius: 22px 0 0 22px ;
+  margin-left: 20px;
+  line-height: 48px;
+  @include w380 {
+    margin-left: 5%;
+  }
+}
+
+.login__icon {
+  fill: #c4cbcd;
+  margin-left: auto;
+  margin-right: auto;
+  height: 16px;
+  width: 15px;
+}
+
+.login__input {
+  width: 340px;
+  height: 45px;
+  margin-bottom: 20px;
+  border-radius: 22px;
+  @include roboto(400);
+  font-size: 16px;
+  padding-left: 65px;
+  border: none;
+  color: rgba(55, 62, 66, 0.5);
+  @include w380 {
+    width: 90%;
+  }
+}
+
+.login__input-beige{
+  background-color: #4e8839;
+}
+
+.login__check {
+  @include roboto(700);
+  font-size: 16px;
+}
+
+.login__check p{
+  opacity: 0.8;
+}
+
+.check__form {
+  @include roboto(400)
+  margin-top: 15px;
+}
+
+.check__text{
+  display: inline-block;
+  margin-right: 35px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.check__text-active {
+  color: #4e8839;
+}
+
+.check__input {
+  margin-right: 5px;
+  &:checked {
+    color: green;
+  }
+}
+
+.login__footer {
+  bottom: 20px;
+  color: white;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  @include mini {
+    font-size: 14px;
+    @include roboto(300);
+  }
+
+}

@@ -1,0 +1,24 @@
+extends ../_template
+
+block variables
+    - var title = 'Welcome'
+
+
+block content
+    .wrapper
+        section.section.welcome
+            .window.window-welcome
+                .welcome__user-block
+                    .user__photo.welcome__photo
+                        .user__photo-avatar
+                            img(src="assets/img/hero_mini.png" alt="").user__photo-img
+                    .user__name Колотушкина Дарья
+                    .user__desc.user__desc-welcome Личный сайт веб разработчика
+                    .socials-welcome
+                        include ../common/socials
+                .buttons
+                    a(href="#").btn.btn-first.btn-welcome__works Мои работы
+                    a(href="about.html").btn.btn-welcome__about Обо мне
+                    a(href="blog.html").btn.btn-last.btn-welcome__blog Блог
+            .login__footer
+                p © Колотушкина Дарья | Cоздано с любовью | 2018

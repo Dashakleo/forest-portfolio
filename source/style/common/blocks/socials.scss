@@ -1,0 +1,62 @@
+.socials {
+  @extend %clearfix;
+  @include mini {
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+  }
+}
+
+.icon {
+  line-height: 2rem;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+  vertical-align: middle;
+  fill: white;
+}
+
+.icon:hover {
+  fill: #4e8839;
+}
+
+.socials__item {
+  float: left;
+  margin-right: 25px;
+}
+
+.socials-header {
+  margin-top: 30px;
+  margin-left: 30px;
+  @include mini {
+    margin: 10px;
+  }
+}
+
+.socials-footer {
+  margin-top: 20px;
+  display: inline-block;
+  width: 100%;
+}
+
+.socials-footer .icon{
+  fill: #a9acae;
+
+  &:hover  {
+    fill: white;
+  }
+}
+
+.socials-welcome {
+  margin: 35px auto 40px auto;
+  display: inline-block;
+}
+
+.socials-welcome .icon {
+  fill: #a9acae;
+
+  &:hover  {
+    fill: #4e8839;
+  }
+}

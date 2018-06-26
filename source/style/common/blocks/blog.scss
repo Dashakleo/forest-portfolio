@@ -1,0 +1,17 @@
+.blog {
+  height: 440px;
+  overflow: hidden;
+  position: relative;
+  background: url(../img/photo_bg.jpg) no-repeat center center/cover;
+  @include mini {
+    height: 100vh;
+    min-height: 500px;
+  }
+}
+
+.blog__header-text  {
+  color: white;
+  @include roboto(400);
+  font-size: 16px;
+  margin-top: -25px;
+}

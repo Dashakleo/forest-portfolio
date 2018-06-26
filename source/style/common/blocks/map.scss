@@ -1,0 +1,26 @@
+.map {
+  height: 960px;
+  background: url(../img/home.png) no-repeat left top / cover;
+  position: relative;
+}
+
+.contacts {
+  width: 380px;
+  height: 310px;
+  background-color: rgba(244, 245, 240, 0.8);
+  border-radius: 3px;
+  @include centered();
+  margin-top: -93px;
+  @include mini {
+    top: 0;
+    margin-top: 155px;
+    width: 100%;
+    max-width: 380px;
+  }
+}
+
+.contacts__title {
+  text-align: center;
+  width: 100%;
+  margin-top: 35px;
+}

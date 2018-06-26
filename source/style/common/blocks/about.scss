@@ -1,0 +1,107 @@
+.about {
+  @extend %clearfix;
+  display: flex;
+  @include small {
+    flex-wrap: wrap;
+  }
+}
+
+.about__left, .about__right {
+  float: left;
+  position: relative;
+  width: 50%;
+}
+
+.about__left {
+  background: $salad;
+}
+
+.about__right {
+  background: $beige;
+  float: right;
+  @include small {
+    background: $salad;
+  }
+}
+
+.about__triangles {
+  position: absolute;
+  bottom: 100%;
+}
+.about__section-title{
+  margin-bottom: 30px;
+  margin-top: -35px;
+}
+
+//Левая часть
+
+.about__content {
+  text-align: center;
+  background-color: $salad;
+  width: 50%;
+
+  @include small {
+    width: 100%;
+  }
+}
+
+.user-about__title {
+  margin-top: 35px;
+}
+
+.user-about__photo {
+  width: 444px;
+  height: 390px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  @include mini {
+    width: 100%;
+  }
+
+}
+
+.user-about__text {
+  margin-top: 15px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  @include small {
+    margin-bottom: 40px;
+  }
+}
+
+.user-about__text p {
+  margin-bottom: 15px;
+}
+//Правая часть
+
+.about-data {
+
+  background-color: $beige;
+  width: 50%;
+  @include small {
+    width: 100%;
+  }
+}
+.about-data__description {
+  text-align: center;
+}
+
+.about-data__title {
+  margin-top: 20px;
+  @include small {
+    margin-top: 50px;
+  }
+}
+
+.about-data__text{
+  margin-top: 10px;
+  margin-bottom: 55px;
+  margin-left: 35px;
+  @include small {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

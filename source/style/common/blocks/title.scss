@@ -1,0 +1,92 @@
+.title {
+  color: $main-font-color;
+  font-size: 63px;
+  font-family: 'Sansus Webissimo', sans-serif;
+  text-transform: uppercase;
+  padding: 50px 70px 25px 70px;
+  position: relative;
+  display: inline-block;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &:after {
+    content: "";
+    display: block;
+    @include centered(x);
+    background-color: $main-font-color;
+    width: 90px;
+    height: 3px;
+    position: absolute;
+    margin-top: 20px;
+  }
+
+  @include small {
+    font-size: 49px;
+    margin-top: 1px;
+  }
+  @include mini {
+    font-size: 35px;
+  }
+}
+
+.title-blog {
+  color: white;
+  display: block;
+  padding: 55px 95px 90px 80px;
+  margin-top: -40px;
+  &:after {
+    background-color: white;
+  }
+}
+
+.subtitle {
+  color: #5d6a5f;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-family: 'Sansus Webissimo', sans-serif;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.subtitle-underline {
+  color: #5d6a5f;
+  font-size: 35px;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 40px;
+  font-family: 'Sansus Webissimo', sans-serif;
+  &:after {
+    content: "";
+    display: block;
+    @include centered(x);
+    background-color: #5d6a5f;
+    width: 89px;
+    height: 3px;
+    position: absolute;
+    margin-top: 20px;
+  }
+  @include small {
+    font-size: 30px;
+  }
+  @include mini {
+    font-size: 21px;
+  }
+}
+
+.text {
+  @include roboto(400);
+  font-size: 16px;
+  color: #566358;
+  line-height: 1.5;
+  text-align: left;
+  @include small {
+    font-size: 14px;
+    width: 480px;
+  }
+  @include mini {
+    width: 90%;
+  }
+}

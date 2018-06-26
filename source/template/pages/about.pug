@@ -1,0 +1,71 @@
+extends ../_template
+
+block variables
+    - var title = 'About'
+
+block content
+    .wrapper
+        section.section.hero
+            .hero__bg
+            .socials-header
+                include ../common/socials
+            a(href="").hamburger
+            a(href="").down-arrow
+                svg.icon__arrow
+                    use(xlink:href="assets/img/sprite.svg#arrow_down")
+            .hero__title
+                img(src="assets/img/portfolio_header.png", alt="").section__title
+                .user.hero__user-block
+                    .user__photo
+                        .user__photo-avatar
+                            img(src="assets/img/hero_mini.png" alt="").user__photo-img
+                    .user__name Колотушкина Дарья
+                    .user__desc Личный сайт веб разработчика
+        section.section
+            .triangles
+                .about__left
+                    svg(viewBox="0 0 1000 110" preserveAspectRatio="none").triangle.about__triangles.triangle_fill_salad
+                        polygon(points="0,0 0,110 1000,110")
+                .about__right
+                    svg(viewBox="0 0 1000 110" preserveAspectRatio="none").triangle.about__triangles.triangle_fill_beige
+                        polygon(points="0,110 1000,110 1000,0")
+                .about
+                    .about__content
+                        .title(style="background-image: url('assets/img/about_header.png')").about__section-title
+                            | Обо мне
+                        .user-about
+                            .user-about__photo
+                                img(src="assets/img/hero_big.jpg", alt="").user-about__photo-img
+                            .user-about__title.subtitle-underline Кто я
+                            .user-about__text.text
+                                p Я веб разработчик из Ростова-на-Дону. Мне 21 год. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                                p Этот сайт я сделала в рамках обучения. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+                    .about-data
+                        .about-data__description
+                            .about-data__title.subtitle-underline
+                                | Чем я могу быть
+                                br
+                                | вам полезна
+                            .about-data__text.text
+                                p Больше всего меня привлекет Frontend разработка, но я также знакомa и могу решать не сложные задачи на Backend. Но давайте по порядку.
+                        .about-data__content
+                            ul.skills
+                                each skill in skills
+                                    each skillsArray, skillName in skill
+                                        li.skills__item
+                                            .skill-section
+                                                .skill-section__title= skillName
+                                                ul.skill-section__list
+                                                    each skillTitle in skillsArray
+                                                        li.skills-section__item
+                                                            .skill
+                                                                svg(class="circles" viewBox='0 0 110 110')
+                                                                    circle(r="45" cx="50%" cy="50%" fill="none" class="circle__first")
+                                                                    circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)" class="circle__second circle-15").skill__circle
+                                                                .skill__name= skillTitle
+        section.section.map
+            .contacts
+                .contacts__title.subtitle-underline Контакты
+                ul.
+
+            include ../common/footer

@@ -1,0 +1,19 @@
+.triangle {
+  height: 110px;
+  width: 100%;
+
+  &_fill{
+    &_salad {
+      fill: $salad;
+    }
+    &_beige {
+      fill: $beige;
+      @include small {
+        fill: $salad;
+      }
+    }
+    &_beige-blog {
+      fill: $beige-blog;
+    }
+  }
+}

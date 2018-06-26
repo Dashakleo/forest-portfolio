@@ -1,0 +1,24 @@
+.hero {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background: url(../img/photo_bg.jpg) no-repeat left top / cover;
+
+}
+
+.hero__title {
+  @include centered();
+  width: 100%;
+}
+
+.hero__user-block {
+  @include centered();
+}
+
+.section__title {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}

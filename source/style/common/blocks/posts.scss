@@ -1,0 +1,99 @@
+.posts {
+  width: 100%;
+  background-color: $beige-blog;
+  position: relative;
+  @extend %clearfix;
+}
+
+.posts__triangles {
+  height: 1px;
+  margin-bottom: 70px;
+}
+
+.posts__menu-side {
+  width: 30%;
+  position: relative;
+  float: left;
+  @include small {
+    display: none;
+  }
+}
+
+//Посты
+
+.posts__context-side {
+  width: 67%;
+  float: right;
+  @include small {
+    width:90%;
+  }
+}
+
+.posts__context {
+  width: 87%;
+}
+
+.post{
+  &:last-child {
+    margin-bottom: 255px;
+    @include small {
+      margin-bottom: 310px;
+    }
+    @include mini {
+      margin-bottom: 370px;
+    }
+    @include w320 {
+      margin-bottom: 430px;
+    }
+  }
+
+  &:not(:last-child):after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #ecebe4;
+    margin-bottom: 70px;
+  }
+}
+
+.post__title{
+  font-size: 35px;
+  font-family: 'Sansus Webissimo', sans-serif;
+  color: #566358;
+  margin-bottom: 25px;
+  @include small {
+    font-size: 30px;
+  }
+  @include mini {
+    font-size: 21px;
+  }
+}
+
+.post__data{
+  @include roboto(400);
+  font-size: 16px;
+  color: $green;
+  margin-bottom: 25px;
+  @include small {
+    font-size: 14px;
+  }
+}
+
+.post__text {
+  font-size: 16px;
+  color: #566358;
+  @include roboto(400);
+  line-height: 1.625;
+  @include small {
+    font-size: 14px;
+  }
+}
+
+.post__text p {
+  margin-bottom: 20px;
+  &:last-child{
+    margin-bottom: 70px;
+  }
+}
+

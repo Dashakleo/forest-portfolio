@@ -1,0 +1,23 @@
+.window {
+  background-color: rgba(18, 38, 32, 0.6);
+  color: white;
+  @include centered();
+  text-align: center;
+  border-radius: 4px;
+}
+
+.window-login {
+  height: 430px;
+  width: 380px;
+  @include w380{
+    width: 95%;
+  }
+}
+
+.window-welcome {
+  height: 395px;
+  width: 380px;
+  @include w380{
+    width: 95%;
+  }
+}

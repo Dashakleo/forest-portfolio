@@ -1,0 +1,17 @@
+.down-arrow {
+  bottom: 40px;
+  @include centered(x);
+  z-index: 10;
+}
+
+.icon__arrow {
+  fill: white;
+  opacity: 0.8;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  &:hover {
+    opacity: 1;
+  }
+}

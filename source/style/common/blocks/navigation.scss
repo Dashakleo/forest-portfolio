@@ -1,0 +1,28 @@
+.posts__navigation{
+  width: 240px;
+  @include centered(x);
+  margin-top: 20px;
+}
+
+.navigation__item {
+  @include roboto(400);
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: right;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.navigation__item-active {
+  color: $green;
+  @include roboto(700);
+  &:before {
+    content: "";
+    display: inline-block;
+    height: 42px;
+    width: 3px;
+    background-color: $green;
+    @include centered(y);
+    margin-left: 17px;
+  }
+}

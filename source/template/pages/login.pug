@@ -1,0 +1,32 @@
+extends ../_template
+
+block variables
+    - var title = 'Login'
+
+block content
+    .wrapper
+        section.section.login
+            .window.window-login
+                .login__title Авторизуйтесь
+                .login__forms
+                    form
+                        .input__pic
+                            svg.login__icon
+                                use(xlink:href="assets/img/sprite.svg#login")
+                        input(type="text" name="login" placeholder="Логин").login__input
+                        .input__pic
+                            svg.login__icon
+                                use(xlink:href="assets/img/sprite.svg#password")
+                        input(type="text" name="password" placeholder="Пароль").login__input
+                .login__check
+                    p Вы точно не робот?
+                    form.check__form
+                         input(type="radio" name="answer" value="a1" checked).check__input
+                         .check__text.check__text-active Да
+                         input(type="radio" name="answer" value="a2").check__input
+                         .check__text Не уверен
+                .buttons
+                    a(href="#").btn.btn-first.btn-login На главную
+                    a(href="#").btn.btn-last.btn-login Войти
+            .login__footer
+                p © Колотушкина Дарья | Cоздано с любовью | 2018

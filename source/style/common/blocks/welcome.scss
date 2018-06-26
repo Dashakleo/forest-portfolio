@@ -1,0 +1,16 @@
+.welcome {
+  height: 100vh;
+  min-height: 530px;
+  overflow: hidden;
+  position: relative;
+  background: url(../img/photo_bg.jpg) no-repeat left top / cover;
+}
+
+.welcome__user-block {
+  @include centered();
+  width: 100%;
+}
+
+.welcome__photo {
+  margin-bottom: 5px;
+}
